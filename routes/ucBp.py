@@ -10,7 +10,15 @@ def home():
     # filtra do banco pelo id quem vai vir
     # pega o nome do usuario
     # passa no html
-    return render_template('home/home_page.html')
+    return render_template('home_page.html')
+
+@ucBp.route('/login')
+def login():
+    return render_template('login_page.html')
+
+@ucBp.route('/register')
+def signup():
+    return render_template('register_page.html')
 
 @ucBp.route('/teste')
 def teste():

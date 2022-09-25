@@ -15,9 +15,8 @@
     
     <header class="cabeçalho">
         <div class="logo-menu">
-            <a href="" class="logo"><i><span>Thunder</span>News</i></a>
+            <a href="{{ url_for('ucBp.home') }}" class="logo"><i><span>Thunder</span>News</i></a>
             <nav class="menu">
-                <a class="menu-itens" href="">Home</a>
                 <a class="menu-itens" href="">About</a>
                 <a class="menu-itens" href="">Blog</a>
                 <a class="menu-itens" href="">Pages</a>
@@ -26,8 +25,8 @@
         </div>
 
         <nav class="menu">
-            <a class="menu-logar" href="">Sign in</a>
-            <button type="button" class="menu-botão"  ><span>Register</span></button>
+            <a class="menu-logar" href="{{ url_for('ucBp.login') }}">Sign in</a>
+            <a class="menu-botão" href="{{ url_for('ucBp.signup') }}"><span>Register</span></a>
         </nav>
     </header>
 

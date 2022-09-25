@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/register_style.css') }}">
+</head>
+<body>
+    <section class="conteudo-principal">
+        <h1 class="logo"><i>ThunderNews</i></h1>
+        <h2 class="sub-logo">Sign up to ThunderNews</h2>
+        <div class="card-registro">
+            <form class="conteudo-registro" action="">
+                <label for=""></label>
+                <input class="registro-entrada" type="text" name="nome" id="nome" placeholder="Nome">
+
+                <label for="email"></label>
+                <input class="registro-entrada" type="email" name="email" id="email" placeholder="E-mail">
+
+                <label for="senha"></label>
+                <input class="registro-entrada" type="password" name="senha"  id="senha" placeholder="Senha">
+
+                <input class="registro-botao" type="submit" value="Sign up">
+            </form>
+
+            <p class="login-botao">Already has an account? <a href="{{ url_for('ucBp.login') }}">Sign In</a></p>
+        </div>
+    </section>
+</body>
+</html>

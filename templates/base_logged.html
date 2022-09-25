@@ -15,9 +15,8 @@
     
     <header class="cabeçalho">
         <div class="logo-menu">
-            <a href="" class="logo"><i><span>Thunder</span>News</i></a>
+            <a href="{{ url_for('ucBp.home') }}" class="logo"><i><span>Thunder</span>News</i></a>
             <nav class="menu">
-                <a class="menu-itens" href="">Home</a>
                 <a class="menu-itens" href="">About</a>
                 <a class="menu-itens" href="">Blog</a>
                 <a class="menu-itens" href="">Pages</a>
@@ -29,6 +28,10 @@
             <img class="avatar-usuario" src="/static/images/Captura de tela 2022-09-24 203230.png" alt="">
             <p class="nome-usuario">{% block nome %} Roger Santos {% endblock %}</p>
         </nav>
+
+        <div>
+            
+        </div>
     </header>
 
     {% block content %}

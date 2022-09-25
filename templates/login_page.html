@@ -17,7 +17,7 @@
 
             <div class="conteudo-escrito">
                 <h1 class="titulo-principal">Sign in<br> to be up on</h1>
-                <p class="subtitulo">If you dont't have an account<br> you can <a href="">Register here!</a></p>
+                <p class="subtitulo">If you dont't have an account<br> you can <a href="{{ url_for('ucBp.signup') }}">Register here!</a></p>
             </div>
 
             <div class="conteudo-imagem">
@@ -26,16 +26,18 @@
 
             <div class="conteudo-login">
                 <img class="login-imagem" src="/static/images/undraw_launching_re_tomg.svg" alt="">
-
-                <input class="login-email" type="email" placeholder="Enter email">
+                <form action="">
+                    <input class="login-email" type="email" placeholder="Enter email">
                 
-                <div class="senha">
-                    <input class="login-senha" type="password" placeholder="Password">
-                    <img class="eye-icon" id="icone" src="/static/images/visibility (1).png" alt="">
-                </div>
+                    <div class="senha">
+                        <input class="login-senha" type="password" placeholder="Password">
+                        <img class="eye-icon" id="icone" src="/static/images/visibility (1).png" alt="">
+                    </div>
 
-                <p class="recuperação">Recover password </p>
-                <input class="conteudo-login-botão" type="submit" value="Sign in" placeholder="">
+                    <p class="recuperação">Recover password </p>
+                    <input class="conteudo-login-botão" type="submit" value="Sign in" placeholder="">
+                </form>
+
             </div>
         </section>
     </main>
