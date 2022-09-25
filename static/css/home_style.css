@@ -1,0 +1,128 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 75px;
+}
+
+.bem-vindo {
+    font-size: 37px;
+    margin-bottom: 35px;
+    border-bottom: 5px solid blue;
+}
+
+.noticia-principal {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: -3px 20px 25px #4461f2;
+    gap: 15px;
+}
+
+.imagem-noticia {
+    width: 650px;
+    border-radius: 25px;
+}
+
+
+.conteudo-secundario {
+    margin-top: 15px;
+}
+
+.conteudo-secundario > h1 {
+    text-align: center;
+    font-size: 37px;
+}
+
+
+.noticia-secundaria {
+    width: 1150px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px auto 0px auto;
+}
+
+.noticia-secundaria .sub-noticia {
+    position: relative;
+    padding: 10px;
+    width: 300px;
+    height: 440px;
+    background-color: #fff;
+    margin: 20px;
+    border: 0.5px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.sub-noticia-imagem > img {
+    border-radius: 10px;
+    width: 280px;
+    height: 180px;
+    margin-bottom: 12px;
+}
+
+
+.noticia-secundaria .sub-noticia sub-noticia-imagem {
+    transition: 0.5s;
+
+}
+
+.noticia-secundaria .sub-noticia h1 {
+    font-size: 2rem;
+}
+
+.noticia-secundaria .sub-noticia .sub-noticia-descricao {
+    padding: 15px;
+    text-align: center;
+}
+
+.sub-noticia-descricao p {
+    color: #666;
+    transition: 0.5s;
+}
+
+.noticia-secundaria .sub-noticia .sub-noticia-descricao a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 20px;
+}
+
+.noticia-secundaria .sub-noticia:hover {
+    background-color: #4461f2;;
+    color: white;
+    margin-top: -30px;
+    box-shadow: 2px 20px 25px #3608df6c;
+    border-color: #4461f2;
+}
+
+.noticia-secundaria .sub-noticia:hover sub-noticia-imagem {
+    filter: invert(1);
+}
+
+.noticia-secundaria .sub-noticia:hover .sub-noticia-descricao p {
+    color: white;
+}
+
+.noticia-secundaria .sub-noticia:hover .sub-noticia-descricao a{
+    color:black;
+    background-color: white;
+}
