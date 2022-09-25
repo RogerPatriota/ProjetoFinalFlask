@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+
+}
+
+.cabeçalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+    padding: 40px 0px 40px 0px;
+    font-family: 'Sarala', sans-serif;
+}
+
+
+.logo-menu{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    margin-left: 100px;
+    gap: 30px;
+}
+
+.logo {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #4461f2;
+    font-size: 30px;
+}
+
+.logo > i > span {
+    color: black
+}
+
+.cabeçalho .menu:last-child{
+    margin-right: 190px;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.menu-itens {
+    color: rgb(63, 59, 59);
+    font-size: 16px;
+}
+
+.menu-idioma {
+    color:rgb(63, 59, 59);
+    font-size: 16px;
+}
+
+.menu-logar {
+    font-size: 16px;
+    color: rgb(63, 59, 59);
+
+}
+
+.menu-logar > span {
+    padding-bottom: 3px;
+    border-bottom: 3px solid #435cd6;
+}
+
+.menu-botão {
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 4px 4px 12px rgba(50, 0, 0, 0.15);
+    color: #4461f2;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.menu-botão > span {
+    margin: 15px;
+}
+
+.menu-usuario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 190px;
+}
+
+.avatar-usuario {
+    width: 70px;
+    height: 70px;
+}
+
+.nome-usuario {
+    margin-top: 10px;
+    display: none;
+}
+
+.logo > i > span:hover {
+    color: rgba(255, 255, 5, 0.733);
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/base_style.css') }}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+    </style>
+</head>
+<body>
+    
+    <header class="cabeçalho">
+        <div class="logo-menu">
+            <a href="" class="logo"><i><span>Thunder</span>News</i></a>
+            <nav class="menu">
+                <a class="menu-itens" href="">Home</a>
+                <a class="menu-itens" href="">About</a>
+                <a class="menu-itens" href="">Blog</a>
+                <a class="menu-itens" href="">Pages</a>
+                <a class="menu-itens" href="">Contact</a>
+            </nav>  
+        </div>
+
+        <nav class="menu">
+            <a class="menu-logar" href="">Sign in</a>
+            <button type="button" class="menu-botão"  ><span>Register</span></button>
+        </nav>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>
