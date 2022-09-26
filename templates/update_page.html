@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar dados</title>
+
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/update_style.css') }}">
+</head>
+<body>
+    {% extends 'base_logged.html' %}
+    {% block content %}
+
+    <div style="display: none;">
+        {% block nome %} Roger Santos{% endblock %}  
+    </div>
+
+    <section class="conteudo-principal">
+        <h1 class="informativo">Altere seus dados</h1>
+        <hr>
+        <div class="formulario">
+            <img class="foto-usuario" src="/static/images/Captura de tela 2022-09-24 203230.png" alt="">
+            <form action="">
+                <label for=""></label>
+                <input class="entrada nome" type="text" name="nome" id="nome" placeholder="Nome">
+
+                <label for="email"></label>
+                <input class="entrada email" type="email" name="email" id="email" placeholder="E-mail">
+
+                <label for="senha"></label>
+                <input class="entrada senha" type="password" name="senha"  id="senha" placeholder="Senha">
+
+                <input class="update-botao" type="submit" value="Update">
+            </form>
+        </div>
+
+    </section>
+
+    {% endblock %}
+</body>
+</html>

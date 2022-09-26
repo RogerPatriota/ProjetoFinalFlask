@@ -17,21 +17,24 @@
         <div class="logo-menu">
             <a href="{{ url_for('ucBp.home') }}" class="logo"><i><span>Thunder</span>News</i></a>
             <nav class="menu">
-                <a class="menu-itens" href="">About</a>
-                <a class="menu-itens" href="">Blog</a>
-                <a class="menu-itens" href="">Pages</a>
-                <a class="menu-itens" href="">Contact</a>
+                <a class="menu-itens" href="{{ url_for('ucBp.contruction') }}">About</a>
+                <a class="menu-itens" href="{{ url_for('ucBp.contruction') }}">Blog</a>
+                <a class="menu-itens" href="{{ url_for('ucBp.contruction') }}">Pages</a>
+                <a class="menu-itens" href="{{ url_for('ucBp.contruction') }}">Contact</a>
             </nav>  
         </div>
 
         <nav class="menu-usuario">
-            <img class="avatar-usuario" src="/static/images/Captura de tela 2022-09-24 203230.png" alt="">
-            <p class="nome-usuario">{% block nome %} Roger Santos {% endblock %}</p>
+            <div class="usuario-dados">
+                <img class="avatar-usuario" src="/static/images/Captura de tela 2022-09-24 203230.png" alt="">
+                <p>{% block nome %} {% endblock %}</p>
+            </div>
+            <a class="botao alterar-usuario" href="{{ url_for('ucBp.update') }}">Alterar dados</a>
+            <a class="botao deletar-usuario" href="">Deletar conta</a>
         </nav>
 
-        <div>
-            
-        </div>
+
+
     </header>
 
     {% block content %}

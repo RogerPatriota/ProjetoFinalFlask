@@ -20,6 +20,10 @@ def login():
 def signup():
     return render_template('register_page.html')
 
-@ucBp.route('/teste')
-def teste():
-    return render_template('base_logged.html')
+@ucBp.route('/update')
+def update():
+    return render_template('update_page.html')
+
+@ucBp.route('/contruction')
+def contruction():
+    return render_template('construction_page.html')

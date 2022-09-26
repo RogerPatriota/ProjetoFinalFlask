@@ -88,12 +88,41 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-right: 190px;
+    margin-right: 130px;
+}
+
+.usuario-dados {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.usuario-dados > p {
+    margin-top: 10px;
+    background-color: rgba(189, 220, 238, 0.3);
+    padding: 10px;
+    border-radius: 19px;
 }
 
 .avatar-usuario {
     width: 70px;
     height: 70px;
+}
+
+.botao {
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 4px 4px 12px rgba(50, 0, 0, 0.15);
+    color: #4461f2;
+    padding: 13px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.deletar-usuario {
+    color: red;
 }
 
 .nome-usuario {
@@ -103,4 +132,14 @@ body {
 
 .logo > i > span:hover {
     color: rgba(255, 255, 5, 0.733);
+}
+
+.botao:hover {
+    background-color: #435cd6;
+    color: aliceblue;
+}
+
+.deletar-usuario:hover {
+    background-color: rgb(203, 38, 38);
+    color: aliceblue;
 }

@@ -116,6 +116,7 @@ body {
 .sub-noticia-descricao p {
     color: #666;
     transition: 0.5s;
+    height: 96px;
 }
 
 .noticia-secundaria .sub-noticia .sub-noticia-descricao a {

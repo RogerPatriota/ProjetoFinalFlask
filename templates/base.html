@@ -17,10 +17,11 @@
         <div class="logo-menu">
             <a href="{{ url_for('ucBp.home') }}" class="logo"><i><span>Thunder</span>News</i></a>
             <nav class="menu">
-                <a class="menu-itens" href="">About</a>
-                <a class="menu-itens" href="">Blog</a>
-                <a class="menu-itens" href="">Pages</a>
-                <a class="menu-itens" href="">Contact</a>
+                <a class="menu-itens" href="{{ url_for('ucBp.contruction') }}">About</a>
+                <a class="menu-itens" href="{{ url_for('ucBp.contruction') }}">Blog</a>
+                <a class="menu-itens" href="{{ url_for('ucBp.contruction') }}">Pages</a>
+                <a class="menu-itens" href="{{ url_for('ucBp.contruction') }}">Contact</a>
+                <a class="menu-itens"  href="">{% block nome %} {% endblock %}</a>
             </nav>  
         </div>
 
