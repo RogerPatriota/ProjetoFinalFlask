@@ -28,6 +28,10 @@ form {
     margin-top: 85px;
 }
 
+.senha-campo {
+    position: relative;
+}
+
 .entrada {
     width: 370px;
     height: 40px;
@@ -36,6 +40,14 @@ form {
     border-radius: 6px;
     border: 0.1px solid rgb(81, 77, 77);
     background-color: rgba(189, 220, 238, 0.3);
+}
+
+.eye-icon {
+    position: absolute;
+    width: 25px;
+    top: 10px;
+    right: 90px;
+    cursor: pointer;
 }
 
 .update-botao {

@@ -52,6 +52,18 @@ body {
     background-color: rgba(189, 220, 238, 0.3);
 }
 
+.campo-senha {
+    position: relative;
+}
+
+.eye-icon {
+    position: absolute;
+    width: 25px;
+    top: 18px;
+    right: 30px;
+    cursor: pointer;
+}
+
 .registro-botao {
     width: 310px;
     margin: 10px;

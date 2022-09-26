@@ -2,7 +2,7 @@ var icon = document.getElementById('icone')
 
 icon.addEventListener('click', () => {
 
-    let input = document.querySelector('.login-senha')
+    let input = document.querySelector('.senha')
 
     if (input.getAttribute('type') == 'password') {
         input.setAttribute('type', 'text')

@@ -13,15 +13,16 @@
         <h1 class="logo"><i>ThunderNews</i></h1>
         <h2 class="sub-logo">Sign up to ThunderNews</h2>
         <div class="card-registro">
-            <form class="conteudo-registro" action="">
-                <label for=""></label>
-                <input class="registro-entrada" type="text" name="nome" id="nome" placeholder="Nome">
+            <form class="conteudo-registro" action="/add" method="POST">
+                
+                <input class="registro-entrada" type="text" name="nome" id="nome" placeholder="Nome" required>
 
-                <label for="email"></label>
-                <input class="registro-entrada" type="email" name="email" id="email" placeholder="E-mail">
+                <input class="registro-entrada" type="email" name="email" id="email" placeholder="E-mail" required>
 
-                <label for="senha"></label>
-                <input class="registro-entrada" type="password" name="senha"  id="senha" placeholder="Senha">
+                <div class="campo-senha">
+                    <input class="registro-entrada senha" type="password" name="senha"  id="senha" placeholder="Senha" required>
+                    <img class="eye-icon" id="icone" src="/static/images/visibility (1).png" alt="">
+                </div>
 
                 <input class="registro-botao" type="submit" value="Sign up">
             </form>
@@ -29,5 +30,8 @@
             <p class="login-botao">Already has an account? <a href="{{ url_for('ucBp.login') }}">Sign In</a></p>
         </div>
     </section>
+
+    <script src="{{ url_for('static',    filename='script/login_script.js') }}"></script>
+    <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
 </body>
 </html>

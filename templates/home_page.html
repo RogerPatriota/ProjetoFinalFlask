@@ -9,12 +9,17 @@
     <link rel="stylesheet" href="{{ url_for('static',    filename='css/home_style.css') }}">
 </head>
 <body>
-    {% extends 'base.html' %}
+    {% if user is none %}
+        {% extends 'base.html' %}
+    {% else %}
+        {% extends 'base_logged.html' %}
+    {% endif %}
+
     {% block content %}
         <main>
 
             <div style="display: none;">
-                {% block nome %} roger {% endblock %}  
+                {% block nome %} {{user.nome}} {% endblock %}
             </div>
             
 

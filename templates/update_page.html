@@ -13,7 +13,7 @@
     {% block content %}
 
     <div style="display: none;">
-        {% block nome %} Roger Santos{% endblock %}  
+        {% block nome %} {{user.nome}}  {% endblock %}  
     </div>
 
     <section class="conteudo-principal">
@@ -21,22 +21,27 @@
         <hr>
         <div class="formulario">
             <img class="foto-usuario" src="/static/images/Captura de tela 2022-09-24 203230.png" alt="">
-            <form action="">
-                <label for=""></label>
+            <form action="/upd" method="POST">
+                <input type="hidden" id="id" name="id" value="{{user.id}}">
+                
                 <input class="entrada nome" type="text" name="nome" id="nome" placeholder="Nome">
 
-                <label for="email"></label>
+                
                 <input class="entrada email" type="email" name="email" id="email" placeholder="E-mail">
 
-                <label for="senha"></label>
-                <input class="entrada senha" type="password" name="senha"  id="senha" placeholder="Senha">
+                <div class="senha-campo">
+                    <input class="entrada senha" type="password" name="senha" id="senha" placeholder="Password">
+                    <img class="eye-icon" id="icone" src="/static/images/visibility (1).png" alt="">
+                </div>
 
                 <input class="update-botao" type="submit" value="Update">
             </form>
         </div>
 
     </section>
-
+    
+    <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+    <script src="{{ url_for('static',    filename='script/login_script.js') }}"></script>
     {% endblock %}
 </body>
 </html>

@@ -15,7 +15,8 @@
     
     <header class="cabeçalho">
         <div class="logo-menu">
-            <a href="{{ url_for('ucBp.home') }}" class="logo"><i><span>Thunder</span>News</i></a>
+            <!--Adicionar o user.id que vem do home {block user.id}-->
+            <a href="{{ url_for('ucBp.home_logged', user_Id = user.id) }}" class="logo"><i><span>Thunder</span>News</i></a>
             <nav class="menu">
                 <a class="menu-itens" href="{{ url_for('ucBp.contruction') }}">About</a>
                 <a class="menu-itens" href="{{ url_for('ucBp.contruction') }}">Blog</a>
@@ -29,12 +30,9 @@
                 <img class="avatar-usuario" src="/static/images/Captura de tela 2022-09-24 203230.png" alt="">
                 <p>{% block nome %} {% endblock %}</p>
             </div>
-            <a class="botao alterar-usuario" href="{{ url_for('ucBp.update') }}">Alterar dados</a>
-            <a class="botao deletar-usuario" href="">Deletar conta</a>
+            <a class="botao alterar-usuario" href="{{ url_for('ucBp.update', user_Id = user.id) }}">Alterar dados</a>
+            <a class="botao deletar-usuario" href="{{ url_for('ucBp.delete', user_Id = user.id) }}">Deletar conta</a>
         </nav>
-
-
-
     </header>
 
     {% block content %}

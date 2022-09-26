@@ -6,6 +6,7 @@
     padding: 85px;
 }
 
+
 .conteudo-escrito {
     display: flex;
     flex-direction: column;
@@ -57,7 +58,7 @@
     border-radius: 7px;
 }
 
-.senha {
+.senha-campo {
     position: relative;
 }
 
@@ -69,6 +70,10 @@
     border: none;
     border-radius: 7px;
     box-sizing: border-box;
+}
+
+.wrong {
+    border: 0.4px solid red;
 }
 
 .eye-icon {
