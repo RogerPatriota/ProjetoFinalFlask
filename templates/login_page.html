@@ -16,8 +16,8 @@
 
         <section class="conteudo-principal">
             <div class="conteudo-escrito">
-                <h1 class="titulo-principal">Sign in<br> to be up on</h1>
-                <p class="subtitulo">If you dont't have an account<br> you can <a href="{{ url_for('ucBp.signup') }}">Register here!</a></p>
+                <h1 class="titulo-principal">Faça login<br>para não ficar de fora</h1>
+                <p class="subtitulo">Se voce não tem uma conta<br> voce pode <a href="{{ url_for('ucBp.signup') }}">Criar uma!</a></p>
             </div>
 
             <div class="conteudo-imagem">
@@ -30,17 +30,17 @@
                     {% with messages = get_flashed_messages() %}
                     {% if messages %}       
 
-                        <input class="wrong login-email" type="email" name="email" id="email" placeholder="Enter-mail">
-                        <div class="senha">
-                            <input class="entrada wrong login-senha" type="password" name="senha" id="senha" placeholder="Password">
+                        <input class="wrong login-email" type="email" name="email" id="email" placeholder="e-mail">
+                        <div class="senha-campo">
+                            <input class="senha wrong login-senha" type="password" name="senha" id="senha" placeholder="Password">
                             <img class="eye-icon" id="icone" src="/static/images/visibility (1).png" alt="">
                         </div>
 
                     {% else %}
 
-                        <input class="login-email" type="email" name="email" id="email" placeholder="Enter e-mail">
-                        <div class="senha">
-                            <input class="entrada login-senha" type="password" name="senha" id="senha" placeholder="Password">
+                        <input class="login-email" type="email" name="email" id="email" placeholder="e-mail">
+                        <div class="senha-campo">
+                            <input class="senha login-senha" type="password" name="senha" id="senha" placeholder="senha">
                             <img class="eye-icon" id="icone" src="/static/images/visibility (1).png" alt="">
                         </div>
 
