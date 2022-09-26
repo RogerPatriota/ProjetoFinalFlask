@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/base_style.css') }}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+    </style>
+</head>
+<body>
+    
+    <header class="cabeçalho">
+        <div class="logo-menu">
+            <!--Adicionar o user.id que vem do home {block user.id}-->
+            <a href="{{ url_for('ucBp.home_logged', user_Id = user.id) }}" class="logo"><i><span>Thunder</span>News</i></a>
+            <nav class="menu">
+                <a class="menu-itens" href="{{ url_for('ucBp.contruction') }}">About</a>
+                <a class="menu-itens" href="{{ url_for('ucBp.contruction') }}">Blog</a>
+                <a class="menu-itens" href="{{ url_for('ucBp.contruction') }}">Pages</a>
+                <a class="menu-itens" href="{{ url_for('ucBp.contruction') }}">Contact</a>
+            </nav>  
+        </div>
+
+        <nav class="menu-usuario">
+            <div class="usuario-dados">
+                <img class="avatar-usuario" src="/static/images/Captura de tela 2022-09-24 203230.png" alt="">
+                <p>{% block nome %} {% endblock %}</p>
+            </div>
+            <a class="botao alterar-usuario" href="{{ url_for('ucBp.update', user_Id = user.id) }}">Alterar dados</a>
+            <a class="botao deletar-usuario" href="{{ url_for('ucBp.delete', user_Id = user.id) }}">Deletar conta</a>
+        </nav>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+</body>

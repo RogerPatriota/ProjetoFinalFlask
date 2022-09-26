@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThunderNews ⚡</title>
+
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/home_style.css') }}">
+</head>
+<body>
+    {% if user is none %}
+        {% extends 'base.html' %}
+    {% else %}
+        {% extends 'base_logged.html' %}
+    {% endif %}
+
+    {% block content %}
+        <main>
+
+            <div style="display: none;">
+                {% block nome %} {{user.nome}} {% endblock %}
+            </div>
+            
+
+            <section class="conteudo-principal">  
+                <h1 class="bem-vindo">Wellcome to the best gamer news portal 🔥</h1>
+                <div class="noticia-principal">
+                    <div class="conteudo-escrito">
+                        <h2 class="titulo-noticia"><a>GTA VI: 80 gameplay videos leaked</a></h2>
+                        <p class="descricao-noticia">No ultimo domingo (18 de setembo) mais de 70 videos do novo jogo da Rockstar
+                        foram disponibilizados na internt. Jogo é apontado por muitos fans da franquia como o lançamento mais aguardado de todos
+                        os tempos na industria dos games. Ate o momento a empresa lider no ramo dos games ainda não se pronun....
+                        <a class="link-noticia" href="">Leia mais</a></p>
+                    </div>
+  
+                </div>
+
+            </section>
+
+            <section class="conteudo-secundario">
+                <h1>Noticas da semana 🔥</h1>
+                <div class="noticia-secundaria">
+                    <div class="sub-noticia">
+                        <div class="sub-noticia-imagem">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTdTf0ILP_oKrOqSzchvjCcnfClnOOnPT7WIwrN7IFHZ8Ll5VJ3qQQx_7--N3r_G_Y_ig&usqp=CAU">
+                        </div>
+                        <h1>The last of us Parte 1</h1>
+                        <div class="sub-noticia-descricao">
+                            <p>
+                                Novo jogo da Naughty Dog decepciona fans da franquia de 
+                                the last of us. Jogadores alegam que o preço cobrado (350)
+                                não é compativel com os titulo "remake".
+                            </p>
+                            <a href="{{ url_for('ucBp.contruction') }}">Leia mais</a>
+                        </div>
+                    </div>
+                    <div class="sub-noticia">
+                        <div class="sub-noticia-imagem">
+                            <img src="https://sm.ign.com/ign_br/photo/default/god-of-war-ragnarok-1637352770106_cn77.jpg">
+                        </div>
+                        <h1>God of War Ragnarok</h1>
+                        <div class="sub-noticia-descricao">
+                            <p>
+                                Os fans de God of War foram presentados na terça feira do dia 13,
+                                durante o State of play, os internautas poderam acompanhar espetaculo de trailer
+                            </p>
+                            <a href="{{ url_for('ucBp.contruction') }}">Leia mais</a>
+                        </div>
+                    </div>
+                    <div class="sub-noticia">
+                        <div class="sub-noticia-imagem">
+                            <img src="https://meups.com.br/wp-content/uploads/2022/09/Jogo-do-Homem-de-Ferro-1.jpg">
+                        </div>
+                        <h1>Homem de ferro</h1>
+                        <div class="sub-noticia-descricao">
+                            <p>
+                                Rumore confirmados! A EA publicou uma imagem oficializando a teoria
+                                que o estudio estaira trabalhando em um novo jogo do Homem de ferro
+                            </p>
+                            <a href="{{ url_for('ucBp.contruction') }}">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="noticia-secundaria">
+                    <div class="sub-noticia">
+                        <div class="sub-noticia-imagem">
+                            <img src="https://apicms.thestar.com.my/uploads/images/2022/09/15/1738109.jpg">
+                        </div>
+                        <h1>The Sims 4</h1>
+                        <div class="sub-noticia-descricao">
+                            <p>
+                                Apos muitos anos de lançamento e muito comentarios na internet sobre o preço de suas DLCs,
+                                a EA finalmente anunciou que deixara o jogo base do The Sims 4 de graça!
+                            </p>
+                            <a href="{{ url_for('ucBp.contruction') }}">Leia mais</a>
+                        </div>
+                    </div>
+                    <div class="sub-noticia">
+                        <div class="sub-noticia-imagem">
+                            <img src="https://files.tecnoblog.net/wp-content/uploads/2019/12/call-of-duty-mobile-768x432.jpg">
+                        </div>
+                        <h1>COD MW II</h1>
+                        <div class="sub-noticia-descricao">
+                            <p>
+                                Durante esse mes de Setembro foi realizado o evento de anuncio do novo COD,
+                                junto com muitas gameplays e novidades, eles anunciaram a data da beta do game!
+                            </p>
+                            <a href="{{ url_for('ucBp.contruction') }}">Leia mais</a>
+                        </div>
+                    </div>
+                    <div class="sub-noticia">
+                        <div class="sub-noticia-imagem">
+                            <img src="https://files.tecnoblog.net/wp-content/uploads/2021/06/New-Project-12-1-768x432.png">
+                        </div>
+                        <h1>Zelda </h1>
+                        <div class="sub-noticia-descricao">
+                            <p>
+                                Alo, fans de Zelda, tão por ai? O novo jogo da franquia foi anunciado e deixou a aniedade
+                                dos adoradores de Zelda nas alturas!
+                            </p>
+                            <a href="{{ url_for('ucBp.contruction') }}">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    {% endblock %}
+
+    </style>
+</body>
+</html>
